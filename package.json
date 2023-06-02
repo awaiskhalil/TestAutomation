@@ -1,0 +1,66 @@
+{
+  "name": "cyautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/cypress run",
+    "cypress:open": "cypress open",
+    "firefoxTest": "cypress run --browser firefox",
+    "cleanup": "rm -fr cypress/reports/mochawesome-html-report",
+    "merge_reports": "mochawesome-merge cypress/reports/mochawesome-report/*.json > output.json",
+    "mochawesome_report": "marge --reportDir cypress/reports/mochawesome-html-report -t Cypress_Test_Report -p Cypress_HMTL_Report -f Cypress_HMTL_Report --timestamp mmddyyyy_HHMMss --charts true output.json",
+    "cy:reportmocha": "npm run cleanup && cypress run && npm run merge_reports && npm run mochawesome_report",
+    "cy:run-chrome-hl": "npx cypress run --browser chrome --headless ",
+    "cy:run-firefox-hl": "cypress run --browser firefox --headless ",
+    "cy:run-edge-hl": "cypress run --spec cypress/e2e/CompanyProfile.feature --browser edge --headless ",
+    "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
+    "generate-report": "merge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
+    "scripts": "browser run --browser chrome",
+    "posttest": "node cucumber-html-report.js",
+    "testrun": "npm run scripts || npm run posttest"
+  },
+  "author": "Awais",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber-html-reporter": "^7.1.0",
+    "cypress": "^10.11.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-xpath": "^2.0.1",
+    "multiple-cucumber-html-reporter": "^1.21.6"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.1.0",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "@emodal/cypress": "^1.0.23",
+    "browserify": "^17.0.0",
+    "browsify": "^0.0.4",
+    "csvjson": "^5.1.0",
+    "cypress-plugin-api": "^2.10.3",
+    "fast-csv": "^4.3.6",
+    "fs": "^0.0.1-security",
+    "json2csv": "^6.0.0-alpha.2",
+    "mssql": "^9.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "html": {
+      "enabled": true
+    },
+    "json": {
+      "enabled": true
+    },
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    },
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": [
+      "cypress/e2e/AddPaymentGTD/*.{js,ts}",
+      "cypress/e2e/[filepath].{js,ts}",
+      "cypress/support/step_definitions/*.{js,ts}"
+    ]
+  }
+}
