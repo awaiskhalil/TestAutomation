@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="240.971" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-05-30T13:08:06" tests="0" file="cypress\e2e\AddPaymentGTD.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Add Payment Guarantee Date" timestamp="2023-05-30T13:08:06" tests="1" time="240.761" failures="1">
+    <testcase name="Add Payment Guarantee Date Add Pay GTD thru UI" time="0.000" classname="Add Pay GTD thru UI">
+      <failure message="Timed out retrying after 90000ms: Expected to find content: &apos;N/A&apos; within the element: &lt;span.pro-lbl-text-16.ng-binding&gt; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 90000ms: Expected to find content: 'N/A' within the element: <span.pro-lbl-text-16.ng-binding> but never did.
+    at Context.eval (cypress/e2e/AddPaymentGTD/AddPaymentGTD.spec.js:293:43)
+    at Registry.runStepDefininition (node_modules/@badeball/cypress-cucumber-preprocessor/lib/registry.js:119:0)
+    at Context.eval (node_modules/@badeball/cypress-cucumber-preprocessor/lib/create-tests.js:291:0)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

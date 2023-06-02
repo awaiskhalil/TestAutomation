@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="103.936" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-01-30T15:56:30" tests="0" file="cypress\e2e\MyContainers\MyContainers.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Drayxchange login" timestamp="2023-01-30T15:56:30" tests="1" time="103.864" failures="1">
+    <testcase name="Drayxchange login Drayxchange App" time="0.000" classname="Drayxchange App">
+      <failure message="Timed out retrying after 90000ms: Expected to find content: &apos;Log In&apos; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 90000ms: Expected to find content: 'Log In' but never did.
+    at Context.eval (cypress/e2e/MyContainers/MyContainers.cy.js:8:7)
+    at Registry.runStepDefininition (node_modules/@badeball/cypress-cucumber-preprocessor/lib/registry.js:118:0)
+    at Context.eval (node_modules/@badeball/cypress-cucumber-preprocessor/lib/create-tests.js:291:0)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

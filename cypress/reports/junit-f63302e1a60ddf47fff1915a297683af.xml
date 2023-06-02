@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.284" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-05-18T13:31:21" tests="0" file="cypress\e2e\CreateContainerAPI.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Process 315 file in Demo" timestamp="2023-05-18T13:31:21" tests="1" time="1.231" failures="0">
+    <testcase name="Process 315 file in Demo Add New container" time="1.252" classname="Add New container">
+    </testcase>
+  </testsuite>
+</testsuites>

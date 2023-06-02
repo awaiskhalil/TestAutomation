@@ -1,0 +1,70 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Drayxchange login",
+    "line": 1,
+    "id": "drayxchange-login",
+    "tags": [],
+    "uri": "Drayxchange.feature",
+    "elements": [
+      {
+        "id": "drayxchange-login;drayxchange-app",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Drayxchange App",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "a User visit the Drayxchange App",
+            "result": {
+              "status": "passed",
+              "duration": 11350000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "a User enters the username",
+            "result": {
+              "status": "failed",
+              "duration": 120837000000,
+              "error_message": "AssertionError: Timed out retrying after 120000ms: Expected to find element: `input[name=Username`, but never found it.\n    [2]</<@http://premium.uatemodal.com/__cypress/tests?p=cypress\\integration\\Drayxchange\\Drayxchange.feature:45:6\n    resolveAndRunStepDefinition@http://premium.uatemodal.com/__cypress/tests?p=cypress\\integration\\Drayxchange\\Drayxchange.feature:10456:29\n    stepTest/<@http://premium.uatemodal.com/__cypress/tests?p=cypress\\integration\\Drayxchange\\Drayxchange.feature:9777:35\n    getRet@http://premium.uatemodal.com/__cypress/runner/cypress_runner.js:160434:20\n    tryCatcher@http://premium.uatemodal.com/__cypress/runner/cypress_runner.js:13022:23\n    ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try@http://premium.uatemodal.com/__cypress/runner/cypress_runner.js:10296:29\n    thenFn@http://premium.uatemodal.com/__cypress/runner/cypress_runner.js:160452:60\n    then@http://premium.uatemodal.com/__cypress/runner/cypress_runner.js:160904:21\n    ../driver/src/cypress/cy.ts/addCommand/wrapByType/<@http://premium.uatemodal.com/__cypress/runner/cypress_runner.js:178437:19\n    ../driver/src/cypress/command_queue.ts/runCommand/<@http://premium.uatemodal.com/__cypress/runner/cypress_runner.js:177222:15\n    tryCatcher@http://premium.uatemodal.com/__cypress/runner/cypress_runner.js:13022:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@http://premium.uatemodal.com/__cypress/runner/cypress_runner.js:10957:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@http://premium.uatemodal.com/__cypress/runner/cypress_runner.js:11014:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx@http://premium.uatemodal.com/__cypress/runner/cypress_runner.js:11051:10\n    _drainQueueStep@http://premium.uatemodal.com/__cypress/runner/cypress_runner.js:7733:12\n    _drainQueue@http://premium.uatemodal.com/__cypress/runner/cypress_runner.js:7722:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@http://premium.uatemodal.com/__cypress/runner/cypress_runner.js:7738:16\n    ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues@http://premium.uatemodal.com/__cypress/runner/cypress_runner.js:7608:14\n"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "a User enters the password",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "a User clicks on the login button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "a User will be logged in",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
